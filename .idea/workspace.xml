@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d26ac771-2b6f-42c5-8c21-664c78a4cab0" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="977372268">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="go" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Go" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="go" value="901" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Go" value="901" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.go.postfix.template.usages.trigger">
+        <counts>
+          <entry key=".var" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/timeutil/timeutil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+              <folding>
+                <element signature="e#18#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tarutil/tarutil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="170" column="22" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
+              <folding>
+                <element signature="e#17#184#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uuidutil/uuidutil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+              <folding>
+                <element signature="e#18#93#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/go/src/io/io.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="401" column="40" selection-start-line="401" selection-start-column="38" selection-end-line="401" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../spikeProxy/common/common.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fileutil/fileutil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#18#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fileutil/fileutil_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-82">
+              <caret line="100" column="19" lean-forward="true" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+              <folding>
+                <element signature="e#18#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Comma</find>
+      <find>&quot;\\&quot;</find>
+      <find>&quot;,&quot;</find>
+      <find>&quot; &quot;</find>
+      <find>&quot;/&quot;</find>
+      <find>ZERO</find>
+      <find>GetCurrentTime</find>
+      <find>written</find>
+      <find>dst</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/../../..</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/intutil/intutil.go" />
+        <option value="$PROJECT_DIR$/hashutil/hashutil.go" />
+        <option value="$PROJECT_DIR$/arrayutil/arrayutil.go" />
+        <option value="$PROJECT_DIR$/base58util/base58util.go" />
+        <option value="$PROJECT_DIR$/common/common.go" />
+        <option value="$PROJECT_DIR$/stringutil/stringutil.go" />
+        <option value="$PROJECT_DIR$/timeutil/timeutil.go" />
+        <option value="$PROJECT_DIR$/uuidutil/uuidutil.go" />
+        <option value="$PROJECT_DIR$/symlink/symlink.go" />
+        <option value="$PROJECT_DIR$/symlink/symlinkPosix.go" />
+        <option value="$PROJECT_DIR$/tarutil/tarutil.go" />
+        <option value="$PROJECT_DIR$/fileutil/fileutil_test.go" />
+        <option value="$PROJECT_DIR$/fileutil/fileutil.go" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="823" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="go-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="go-utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="go-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="go-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;go-utils&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="go-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;go-utils&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Test.Test_copyFile in liuchonglin.com/go-utils/fileutil">
+    <configuration name="Test_copyFile in liuchonglin.com/go-utils/fileutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-utils" />
+      <working_directory value="$PROJECT_DIR$/fileutil" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="liuchonglin.com/go-utils/fileutil" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test_copyFile$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-utils" />
+      <working_directory value="$PROJECT_DIR$/fileutil" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="liuchonglin.com/go-utils/fileutil" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test_copyFile1$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Test.Test_copyFile in liuchonglin.com/go-utils/fileutil" />
+      <item itemvalue="Go Test.Test_copyFile1 in liuchonglin.com/go-utils/fileutil" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.Test_copyFile in liuchonglin.com/go-utils/fileutil" />
+        <item itemvalue="Go Test.Test_copyFile1 in liuchonglin.com/go-utils/fileutil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 22s.xml">
+      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 27s.xml">
+      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 30s.xml">
+      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 35s.xml">
+      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_copyFile_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 40s.xml">
+      <configuration name="Test_copyFile in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 50s.xml">
+      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 59s.xml">
+      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_copyFile_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 59m 06s.xml">
+      <configuration name="Test_copyFile in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_copyFile_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 59m 12s.xml">
+      <configuration name="Test_copyFile in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_copyFile_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 59m 19s.xml">
+      <configuration name="Test_copyFile in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/arrayutil/arrayutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base58util/base58util.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+          <folding>
+            <element signature="e#20#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hashutil/hashutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="e#18#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intutil/intutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go.etcd.io/etcd/pkg/pathutil/path.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../spikeProxy/common/utils/utils.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../spikeProxy/common/common.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timeutil/timeutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="e#18#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/archive/tar/common.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uuidutil/uuidutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding>
+            <element signature="e#18#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symlink/symlinkPosix.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#17#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symlink/symlink.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <element signature="e#16#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stringutil/stringutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="e#20#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/golangci/golangci-lint/pkg/timeutils/stopwatch.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/golangci/golangci-lint/pkg/timeutils/track.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarutil/tarutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="170" column="22" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
+          <folding>
+            <element signature="e#17#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/bufio/bufio.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="368" column="25" selection-start-line="368" selection-start-column="17" selection-end-line="368" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/os/file.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="266" column="5" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/io/io.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="401" column="40" selection-start-line="401" selection-start-column="38" selection-end-line="401" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileutil/fileutil_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82">
+          <caret line="100" column="19" lean-forward="true" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+          <folding>
+            <element signature="e#18#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileutil/fileutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#18#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
