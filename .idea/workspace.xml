@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d26ac771-2b6f-42c5-8c21-664c78a4cab0" name="Default Changelist" comment="" />
+    <list default="true" id="d26ac771-2b6f-42c5-8c21-664c78a4cab0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commonutil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/equalutil/equalutil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fieldutil/fieldutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arrayutil/arrayutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/arrayutil/arrayutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base58util/base58util.go" beforeDir="false" afterPath="$PROJECT_DIR$/base58util/base58util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileutil/fileutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/fileutil/fileutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileutil/fileutil_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/fileutil/fileutil_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashutil/hashutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/hashutil/hashutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intutil/intutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/intutil/intutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stringutil/stringutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/stringutil/stringutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symlink/symlink.go" beforeDir="false" afterPath="$PROJECT_DIR$/symlink/symlink.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarutil/tarutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/tarutil/tarutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timeutil/timeutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/timeutil/timeutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uuidutil/uuidutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/uuidutil/uuidutil.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/go_utils$commonUtil_test_go.out" NAME="commonUtil_test.go Coverage Results" MODIFIED="1551843411823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/go_utils$fieldutil_test_go.out" NAME="fieldutil_test.go Coverage Results" MODIFIED="1552016354318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/go_utils$TestEqual_in_github_com_liuchonglin_go_utils_equalutil.out" NAME="TestEqual in github.com/liuchonglin/go-utils/equalutil Coverage Results" MODIFIED="1551942652802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/go_utils$go_test_equalutil.out" NAME="go test equalutil Coverage Results" MODIFIED="1551942674312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/go_utils$TestEqual2_in_github_com_liuchonglin_go_utils_equalutil.out" NAME="TestEqual2 in github.com/liuchonglin/go-utils/equalutil Coverage Results" MODIFIED="1551941108602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/go_utils$TestCheckPointer_in_github_com_liuchonglin_go_utils.out" NAME="TestCheckPointer in github.com/liuchonglin/go-utils Coverage Results" MODIFIED="1551837920613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/go_utils$TestIsEmpty_in_github_com_liuchonglin_go_utils.out" NAME="TestIsEmpty in github.com/liuchonglin/go-utils Coverage Results" MODIFIED="1551856038477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/go_utils$equalutil_test_go.out" NAME="equalutil_test.go Coverage Results" MODIFIED="1552016361218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/go_utils$TestDeepEqual_in_github_com_liuchonglin_go_utils_equalutil.out" NAME="TestDeepEqual in github.com/liuchonglin/go-utils/equalutil Coverage Results" MODIFIED="1551929752436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="354" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="977372268">
@@ -42,17 +76,62 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1834366312">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="go" value="87" />
+          <entry key="s" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Go" value="87" />
+          <entry key="x86 Plan9 Assembly" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="go" value="5763" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Go" value="5763" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.go.postfix.template.usages.trigger">
+        <counts>
+          <entry key=".len" value="1" />
+          <entry key=".println" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/timeutil/timeutil.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            <state relative-caret-position="432">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
-                <element signature="e#18#54#0" expanded="true" />
+                <element signature="e#613#684#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commonutil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -60,10 +139,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tarutil/tarutil.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="170" column="22" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
+            <state relative-caret-position="-2534">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/equalutil/equalutil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-73">
+              <caret line="98" column="43" lean-forward="true" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
               <folding>
-                <element signature="e#17#184#0" expanded="true" />
+                <element signature="e#623#661#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,53 +160,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uuidutil/uuidutil.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+            <state relative-caret-position="-904">
+              <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
               <folding>
-                <element signature="e#18#93#0" expanded="true" />
+                <element signature="e#601#676#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/go/src/io/io.go">
+        <entry file="file://$PROJECT_DIR$/commonutil_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="401" column="40" selection-start-line="401" selection-start-column="38" selection-end-line="401" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../spikeProxy/common/common.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fileutil/fileutil.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#18#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fileutil/fileutil_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
-              <caret line="100" column="19" lean-forward="true" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
-              <folding>
-                <element signature="e#18#47#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-861">
+              <caret line="205" column="12" lean-forward="true" selection-start-line="205" selection-start-column="12" selection-end-line="205" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -143,6 +198,17 @@
       <find>GetCurrentTime</find>
       <find>written</find>
       <find>dst</find>
+      <find>string_not_empty</find>
+      <find>format</find>
+      <find>a</find>
+      <find>depth</find>
+      <find>case Func</find>
+      <find>Func</find>
+      <find>CanSet</find>
+      <find>IsNil</find>
+      <find>Chan</find>
+      <find>&amp;</find>
+      <find>Ptr</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -152,22 +218,40 @@
     </dirStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/intutil/intutil.go" />
-        <option value="$PROJECT_DIR$/hashutil/hashutil.go" />
-        <option value="$PROJECT_DIR$/arrayutil/arrayutil.go" />
-        <option value="$PROJECT_DIR$/base58util/base58util.go" />
         <option value="$PROJECT_DIR$/common/common.go" />
-        <option value="$PROJECT_DIR$/stringutil/stringutil.go" />
-        <option value="$PROJECT_DIR$/timeutil/timeutil.go" />
-        <option value="$PROJECT_DIR$/uuidutil/uuidutil.go" />
-        <option value="$PROJECT_DIR$/symlink/symlink.go" />
         <option value="$PROJECT_DIR$/symlink/symlinkPosix.go" />
-        <option value="$PROJECT_DIR$/tarutil/tarutil.go" />
+        <option value="$PROJECT_DIR$/intutil/intutil.go" />
+        <option value="$PROJECT_DIR$/uuidutil/uuidutil.go" />
+        <option value="$PROJECT_DIR$/base58util/base58util.go" />
         <option value="$PROJECT_DIR$/fileutil/fileutil_test.go" />
+        <option value="$PROJECT_DIR$/hashutil/hashutil.go" />
+        <option value="$PROJECT_DIR$/tarutil/tarutil.go" />
+        <option value="$PROJECT_DIR$/arrayutil/arrayutil.go" />
+        <option value="$PROJECT_DIR$/aa.go" />
+        <option value="$PROJECT_DIR$/CommonUtil.go" />
+        <option value="$PROJECT_DIR$/commonUtil_test.go" />
         <option value="$PROJECT_DIR$/fileutil/fileutil.go" />
+        <option value="$PROJECT_DIR$/commonUtil.go" />
+        <option value="$PROJECT_DIR$/stringutil/stringutil.go" />
+        <option value="$PROJECT_DIR$/stringutil/stringutil_test.go" />
+        <option value="$PROJECT_DIR$/fieldUtil/fieldutil.go" />
+        <option value="$PROJECT_DIR$/equalutil/qualutil.go" />
+        <option value="$PROJECT_DIR$/equalutil/equalutil_test.go" />
+        <option value="$PROJECT_DIR$/displayutil/displayutil_test.go" />
+        <option value="$PROJECT_DIR$/displayutil/displayutil.go" />
+        <option value="$PROJECT_DIR$/fieldutil/fieldutil.go" />
+        <option value="$PROJECT_DIR$/fieldutil/fieldutil_test.go" />
+        <option value="$PROJECT_DIR$/symlink/symlink.go" />
+        <option value="$PROJECT_DIR$/equalutil/equalutil.go" />
+        <option value="$PROJECT_DIR$/commonutil.go" />
+        <option value="$PROJECT_DIR$/commonutil_test.go" />
+        <option value="$PROJECT_DIR$/timeutil/timeutil.go" />
       </list>
     </option>
   </component>
@@ -177,7 +261,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="823" />
@@ -187,6 +271,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,26 +279,10 @@
               <item name="go-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="go-utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="go-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="go-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;go-utils&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="go-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;go-utils&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,7 +290,7 @@
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
@@ -238,72 +307,112 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.Test_copyFile in liuchonglin.com/go-utils/fileutil">
-    <configuration name="Test_copyFile in liuchonglin.com/go-utils/fileutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestIsEmpty in github.com/liuchonglin/go-utils">
+    <configuration name="TestIntToPtr in github.com/liuchonglin/go-utils/fieldutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-utils" />
-      <working_directory value="$PROJECT_DIR$/fileutil" />
+      <working_directory value="$PROJECT_DIR$/fieldutil" />
       <go_parameters value="-i" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="liuchonglin.com/go-utils/fileutil" />
+      <package value="github.com/liuchonglin/go-utils/fieldutil" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^Test_copyFile$" />
+      <pattern value="^TestIntToPtr$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIsEmpty in github.com/liuchonglin/go-utils" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-utils" />
-      <working_directory value="$PROJECT_DIR$/fileutil" />
+      <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="liuchonglin.com/go-utils/fileutil" />
+      <package value="github.com/liuchonglin/go-utils" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^Test_copyFile1$" />
+      <pattern value="^TestIsEmpty$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestToInt8 in github.com/liuchonglin/go-utils/fieldutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-utils" />
+      <working_directory value="$PROJECT_DIR$/fieldutil" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/liuchonglin/go-utils/fieldutil" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestToInt8$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="equalutil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-utils" />
+      <working_directory value="$PROJECT_DIR$/equalutil" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="github.com/liuchonglin/go-utils" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/equalutil/equalutil_test.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fieldutil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-utils" />
+      <working_directory value="$PROJECT_DIR$/fieldutil" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="github.com/liuchonglin/go-utils" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/fieldutil/fieldutil_test.go" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Test.Test_copyFile in liuchonglin.com/go-utils/fileutil" />
-      <item itemvalue="Go Test.Test_copyFile1 in liuchonglin.com/go-utils/fileutil" />
+      <item itemvalue="Go Test.TestIntToPtr in github.com/liuchonglin/go-utils/fieldutil" />
+      <item itemvalue="Go Test.TestToInt8 in github.com/liuchonglin/go-utils/fieldutil" />
+      <item itemvalue="Go Test.fieldutil_test.go" />
+      <item itemvalue="Go Test.equalutil_test.go" />
+      <item itemvalue="Go Test.TestIsEmpty in github.com/liuchonglin/go-utils" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.Test_copyFile in liuchonglin.com/go-utils/fileutil" />
-        <item itemvalue="Go Test.Test_copyFile1 in liuchonglin.com/go-utils/fileutil" />
+        <item itemvalue="Go Test.TestIsEmpty in github.com/liuchonglin/go-utils" />
+        <item itemvalue="Go Test.equalutil_test.go" />
+        <item itemvalue="Go Test.fieldutil_test.go" />
+        <item itemvalue="Go Test.TestToInt8 in github.com/liuchonglin/go-utils/fieldutil" />
+        <item itemvalue="Go Test.TestIntToPtr in github.com/liuchonglin/go-utils/fieldutil" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 22s.xml">
-      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    <history-entry file="fieldutil_test_go - 2019.03.08 at 11h 39m 14s.xml">
+      <configuration name="fieldutil_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 27s.xml">
-      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    <history-entry file="equalutil_test_go - 2019.03.08 at 11h 39m 21s.xml">
+      <configuration name="equalutil_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 30s.xml">
-      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestIsEmpty_in_github_com_liuchonglin_go-utils - 2019.03.08 at 14h 01m 34s.xml">
+      <configuration name="TestIsEmpty in github.com/liuchonglin/go-utils" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 35s.xml">
-      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestIsEmpty_in_github_com_liuchonglin_go-utils - 2019.03.08 at 14h 02m 35s.xml">
+      <configuration name="TestIsEmpty in github.com/liuchonglin/go-utils" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_copyFile_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 40s.xml">
-      <configuration name="Test_copyFile in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestIsEmpty_in_github_com_liuchonglin_go-utils - 2019.03.08 at 14h 03m 08s.xml">
+      <configuration name="TestIsEmpty in github.com/liuchonglin/go-utils" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 50s.xml">
-      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestIsEmpty_in_github_com_liuchonglin_go-utils - 2019.03.08 at 14h 03m 20s.xml">
+      <configuration name="TestIsEmpty in github.com/liuchonglin/go-utils" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_copyFile1_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 58m 59s.xml">
-      <configuration name="Test_copyFile1 in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestIsEmpty_in_github_com_liuchonglin_go-utils - 2019.03.08 at 14h 03m 34s.xml">
+      <configuration name="TestIsEmpty in github.com/liuchonglin/go-utils" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_copyFile_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 59m 06s.xml">
-      <configuration name="Test_copyFile in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestIsEmpty_in_github_com_liuchonglin_go-utils - 2019.03.08 at 14h 04m 04s.xml">
+      <configuration name="TestIsEmpty in github.com/liuchonglin/go-utils" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_copyFile_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 59m 12s.xml">
-      <configuration name="Test_copyFile in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestIsEmpty_in_github_com_liuchonglin_go-utils - 2019.03.08 at 14h 04m 32s.xml">
+      <configuration name="TestIsEmpty in github.com/liuchonglin/go-utils" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_copyFile_in_liuchonglin_com_go-utils_fileutil - 2019.03.04 at 17h 59m 19s.xml">
-      <configuration name="Test_copyFile in liuchonglin.com/go-utils/fileutil" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestIsEmpty_in_github_com_liuchonglin_go-utils - 2019.03.08 at 14h 04m 37s.xml">
+      <configuration name="TestIsEmpty in github.com/liuchonglin/go-utils" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -311,19 +420,21 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3433735" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" side_tool="true" weight="0.3297568" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -356,79 +467,23 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file:///usr/local/go/src/reflect/deepequal.go</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/arrayutil/arrayutil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base58util/base58util.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-          <folding>
-            <element signature="e#20#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hashutil/hashutil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="e#18#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intutil/intutil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../go.etcd.io/etcd/pkg/pathutil/path.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../spikeProxy/common/utils/utils.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../spikeProxy/common/common.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/common.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timeutil/timeutil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <element signature="e#18#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go.etcd.io/etcd/pkg/pathutil/path.go" />
+    <entry file="file://$PROJECT_DIR$/../../spikeProxy/common/utils/utils.go" />
+    <entry file="file://$PROJECT_DIR$/../../spikeProxy/common/common.go" />
+    <entry file="file://$PROJECT_DIR$/common/common.go" />
     <entry file="file:///usr/local/go/src/archive/tar/common.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -436,70 +491,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uuidutil/uuidutil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding>
-            <element signature="e#18#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symlink/symlinkPosix.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#17#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symlink/symlink.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding>
-            <element signature="e#16#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stringutil/stringutil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="e#20#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../github.com/golangci/golangci-lint/pkg/timeutils/stopwatch.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../github.com/golangci/golangci-lint/pkg/timeutils/track.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tarutil/tarutil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="170" column="22" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
-          <folding>
-            <element signature="e#17#184#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/golangci/golangci-lint/pkg/timeutils/stopwatch.go" />
+    <entry file="file://$PROJECT_DIR$/../../github.com/golangci/golangci-lint/pkg/timeutils/track.go" />
     <entry file="file:///usr/local/go/src/bufio/bufio.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -514,30 +507,304 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/go/src/io/io.go">
+    <entry file="file://$PROJECT_DIR$/../../beego/bee/config/conf.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="401" column="40" selection-start-line="401" selection-start-column="38" selection-end-line="401" selection-end-column="40" />
+        <state relative-caret-position="108">
+          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symlink/symlinkPosix.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aa.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/unicode/graphic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="103" column="5" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/strings/strings.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="785" column="5" selection-start-line="785" selection-start-column="5" selection-end-line="785" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base58util/base58util.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../liuchonglin.com/baseCms/common/common.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="92" column="52" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="92" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stringutil/stringutil_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+          <folding>
+            <element signature="e#603#635#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fileutil/fileutil_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="100" column="19" lean-forward="true" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+        <state relative-caret-position="234">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/io/io.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="74" column="2" lean-forward="true" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/sync/pool.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291">
+          <caret line="123" column="15" selection-start-line="123" selection-start-column="15" selection-end-line="123" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stringutil/stringutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/reflect/value.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="962" column="5" lean-forward="true" selection-start-line="962" selection-start-column="5" selection-end-line="962" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/unsafe/unsafe.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3114">
+          <caret line="173" column="5" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/go/types/type.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/runtime/asm_amd64.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="2362" column="59" lean-forward="true" selection-start-line="2362" selection-start-column="59" selection-end-line="2362" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/testing/testing.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="782" selection-start-line="782" selection-end-line="782" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arrayutil/arrayutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../gomodule/redigo/redis/scan.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="511" column="5" selection-start-line="511" selection-start-column="5" selection-end-line="511" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="590" lean-forward="true" selection-start-line="590" selection-end-line="590" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/reflect/deepequal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/builtin/builtin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/encoding/json/encode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="170" column="5" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/displayutil/displayutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
           <folding>
-            <element signature="e#18#47#0" expanded="true" />
+            <element signature="e#21#60#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/fmt/print.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-676">
+          <caret line="262" column="5" selection-start-line="262" selection-start-column="5" selection-end-line="262" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/displayutil/displayutil_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/reflect/type.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="250" column="4" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fileutil/fileutil.go">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-328">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fieldutil/fieldutil_test.go">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equalutil/equalutil_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hashutil/hashutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
-            <element signature="e#18#45#0" expanded="true" />
+            <element signature="e#601#696#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intutil/intutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symlink/symlink.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding>
+            <element signature="e#600#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fieldutil/fieldutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equalutil/equalutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="98" column="43" lean-forward="true" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
+          <folding>
+            <element signature="e#623#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commonutil_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-861">
+          <caret line="205" column="12" lean-forward="true" selection-start-line="205" selection-start-column="12" selection-end-line="205" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uuidutil/uuidutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-904">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="e#601#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarutil/tarutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2534">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timeutil/timeutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="e#613#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commonutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -14,10 +14,43 @@
 package stringutil
 
 import (
-	"strings"
+	"testing"
 	)
 
-// 去掉首尾空格
-func Trim(value string) string {
-	return strings.Trim(value, " ")
+func TestTrim(t *testing.T) {
+	type args struct {
+		value string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		{
+			name: "ok",
+			args: args{
+				value: "  s  ",
+			},
+			want: "s",
+		}, {
+			name: "left",
+			args: args{
+				value: "  s",
+			},
+			want: "s",
+		}, {
+			name: "right",
+			args: args{
+				value: "s     ",
+			},
+			want: "s",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := Trim(tt.args.value); got != tt.want {
+				t.Errorf("Trim() = %v, want %v", got, tt.want)
+			}
+		})
+	}
 }

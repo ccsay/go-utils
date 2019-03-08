@@ -1,10 +1,25 @@
+// Copyright 2019 go-utils Authors
+
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+
+// http://www.apache.org/licenses/LICENSE-2.0
+
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// 日期与时间工具
 package timeutil
 
 import (
 	"fmt"
 	"time"
-		"liuchonglin.com/go-utils/stringutil"
-	)
+	"github.com/liuchonglin/go-utils/stringutil"
+)
 
 const (
 	FormatDay  = "2006-01-02"
@@ -39,7 +54,6 @@ func GetCurrentTime(format string) string {
 
 // 加减时间
 func AddSubTime(t time.Time, ts string) time.Time {
-
 	//ParseDuration解析一个时间段字符串，如"300ms"、"-1.5h"、"2h45m"。
 	//合法的单位有"ns"纳秒,"us"微秒,"µs"微秒、"ms"毫秒、"s"秒、"m"分钟、"h"小时。
 	timePart, err := time.ParseDuration(ts)
