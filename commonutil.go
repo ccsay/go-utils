@@ -41,16 +41,26 @@ func PrintlnJson(a interface{}) {
 }
 
 // 检查传入的接口类型不是指针类型，CheckPointer返回相应错误
-func CheckPointer(p interface{}) error {
-	if p == nil {
+func CheckPointer(a interface{}) error {
+	// 判断a是否为空
+	// 例如： CheckPointer(nil) 调用
+	if a == nil {
 		return InvalidMemoryAddressError
 	}
-	if reflect.TypeOf(p).Kind() != reflect.Ptr {
+	// 判断a是否是指针
+	// 例如：CheckPointer("") 调用
+	if reflect.TypeOf(a).Kind() != reflect.Ptr {
 		return NotPointerError
 	}
-	if isEmpty(reflect.ValueOf(p)) {
+
+	// 判断a的指针是否为空
+	// 例如：
+	// var s *string
+	// CheckPointer(s) 调用
+	if reflect.ValueOf(a).IsNil() {
 		return NilPointerError
 	}
+
 	return nil
 }
 
@@ -76,12 +86,17 @@ func isEmpty(value reflect.Value) bool {
 		return value.Float() == 0
 	case reflect.Complex64, reflect.Complex128:
 		return value.Complex() == 0
-	case reflect.Interface, reflect.Ptr, reflect.Func:
-		return value.IsNil()
+	case reflect.Interface, reflect.Ptr:
+		if value.IsNil() {
+			return true
+		}
+		return isEmpty(value.Elem())
 	case reflect.Array, reflect.Slice, reflect.Chan:
 		return value.Len() == 0
 	case reflect.Map:
 		return len(value.MapKeys()) == 0
+	case reflect.Func:
+		return value.IsNil()
 	default:
 		return reflect.DeepEqual(value.Interface(), reflect.Zero(value.Type()).Interface())
 	}
