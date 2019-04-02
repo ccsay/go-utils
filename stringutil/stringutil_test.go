@@ -14,8 +14,10 @@
 package stringutil
 
 import (
+	"fmt"
 	"testing"
-	)
+	"time"
+)
 
 func TestTrim(t *testing.T) {
 	type args struct {
@@ -51,6 +53,63 @@ func TestTrim(t *testing.T) {
 			if got := Trim(tt.args.value); got != tt.want {
 				t.Errorf("Trim() = %v, want %v", got, tt.want)
 			}
+		})
+	}
+}
+
+func TestStringToInt64(t *testing.T) {
+	type args struct {
+		value string
+	}
+	tests := []struct {
+		name string
+		args args
+		want int64
+	}{
+		{
+			name: "ok",
+			args: args{
+				value: "123456",
+			},
+			want: int64(123456),
+		}, {
+			name: "err",
+			args: args{
+				value: "haha",
+			},
+			want: 0,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := StringToInt64(tt.args.value); got != tt.want {
+				t.Errorf("StringToInt64() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestRandomString(t *testing.T) {
+	type args struct {
+		length int
+	}
+	tests := []struct {
+		name string
+		args args
+	}{
+		{
+			args: args{
+				length: 1000000,
+			},
+		},
+	}
+	for _, tt := range tests {
+
+		t.Run(tt.name, func(t *testing.T) {
+			start := time.Now()
+			got := RandomString(tt.args.length)
+			fmt.Println(got)
+			fmt.Println("ex", time.Now().Sub(start))
 		})
 	}
 }

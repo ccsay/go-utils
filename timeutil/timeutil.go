@@ -22,8 +22,9 @@ import (
 )
 
 const (
-	FormatDay  = "2006-01-02"
-	FormatTime = "2006-01-02 15:04:05"
+	FormatDay       = "2006-01-02"
+	FormatTime      = "2006-01-02 15:04:05"
+	NoDivFormatTime = "20060102150405"
 )
 
 // 时间转字符串
