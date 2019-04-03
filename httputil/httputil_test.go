@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 	"fmt"
-	"github.com/liuchonglin/go-tools/token"
-	"liuchonglin.com/baseCms/controllers/contextUtil"
-	"github.com/satori/go.uuid"
+	"io/ioutil"
+	"net"
+	"github.com/gin-gonic/gin/json"
 )
 
 func TestNewHttpRequest(t *testing.T) {
@@ -35,129 +35,7 @@ func TestNewHttpRequest(t *testing.T) {
 	}
 }
 
-func TestHttpRequest_Get(t *testing.T) {
-	get1 := NewHttpRequest("https://www.cnblogs.com/mafeng/p/7068837.html")
-
-	token, err := jsonWebToken.New(&jsonWebToken.TokenConfig{Issuer: "liu"}).CreateToken(contextUtil.CreateTokenData("admin", "13000008888", 1))
-	if err != nil {
-		panic(err)
-	}
-	get2 := NewHttpRequest("http://localhost:8080/v1/manager/get/1").SetHeader(map[string]string{"token": token, "traceId": uuid.Must(uuid.NewV1()).String()})
-	type fields struct {
-		Url         string
-		ContentType string
-		Header      map[string]string
-		Body        map[string]string
-		Client      *http.Client
-	}
-	tests := []struct {
-		name    string
-		fields  fields
-		want    *http.Response
-		wantErr bool
-	}{
-		{
-			name: "ok",
-			fields: fields{
-				Url:         get1.Url,
-				ContentType: get1.ContentType,
-				Header:      get1.Header,
-				Body:        get1.Body,
-				Client:      get1.Client,
-			},
-			wantErr: false,
-		}, {
-			name: "RESTful get",
-			fields: fields{
-				Url:         get2.Url,
-				ContentType: get2.ContentType,
-				Header:      get2.Header,
-				Body:        get2.Body,
-				Client:      get2.Client,
-			},
-			wantErr: false,
-		},
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			h := &httpRequest{
-				Url:         tt.fields.Url,
-				ContentType: tt.fields.ContentType,
-				Header:      tt.fields.Header,
-				Body:        tt.fields.Body,
-				Client:      tt.fields.Client,
-			}
-			got, err := h.Get()
-			if (err != nil) != tt.wantErr {
-				t.Errorf("httpRequest.Get() error = %v, wantErr %v", err, tt.wantErr)
-				return
-			}
-			fmt.Printf("httpRequest.Get() = %v\n", got)
-		})
-	}
-}
-
-func TestHttpRequest_Post(t *testing.T) {
-	headerMap := map[string]string{"traceId": uuid.Must(uuid.NewV1()).String()}
-	bodyMap := map[string]string{"username": "admin", "password": "123456"}
-	post1 := NewHttpRequest("http://localhost:8080/v1/login/login").SetHeader(headerMap).SetBody(bodyMap)
-	post2 := NewHttpRequest("http://localhost:8080/v1/login/login").SetHeader(headerMap).SetBody(bodyMap).SetContentType(ContentTypeJson)
-	type fields struct {
-		Method      string
-		Url         string
-		ContentType string
-		Header      map[string]string
-		Body        map[string]string
-		Client      *http.Client
-	}
-	tests := []struct {
-		name    string
-		fields  fields
-		want    *http.Response
-		wantErr bool
-	}{
-		{
-			name: "ok",
-			fields: fields{
-				Url:         post1.Url,
-				ContentType: post1.ContentType,
-				Header:      post1.Header,
-				Body:        post1.Body,
-				Client:      post1.Client,
-			},
-			wantErr: false,
-		}, {
-			name: "json",
-			fields: fields{
-				Url:         post2.Url,
-				ContentType: post2.ContentType,
-				Header:      post2.Header,
-				Body:        post2.Body,
-				Client:      post2.Client,
-			},
-			wantErr: false,
-		},
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			h := &httpRequest{
-				Url:         tt.fields.Url,
-				ContentType: tt.fields.ContentType,
-				Header:      tt.fields.Header,
-				Body:        tt.fields.Body,
-				Client:      tt.fields.Client,
-			}
-			got, err := h.Post()
-			if (err != nil) != tt.wantErr {
-				t.Errorf("httpRequest.Post() error = %v, wantErr %v", err, tt.wantErr)
-				return
-			}
-			fmt.Printf("httpRequest.Post() = %v\n", got)
-		})
-	}
-}
-
-func TesthttpRequest_request(t *testing.T) {
+func Test_request(t *testing.T) {
 	type fields struct {
 		Method      string
 		Url         string
@@ -176,7 +54,13 @@ func TesthttpRequest_request(t *testing.T) {
 		want    *http.Response
 		wantErr bool
 	}{
-		// TODO: Add test cases.
+		{
+			name:    "success",
+			fields:  fields{Url: "https://www.baidu.com/", ContentType: JsonContentType, Header: map[string]string{}, Body: map[string]string{}, Client: &http.Client{}},
+			args:    args{method: http.MethodGet},
+			want:    &http.Response{},
+			wantErr: false,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -188,18 +72,23 @@ func TesthttpRequest_request(t *testing.T) {
 				Client:      tt.fields.Client,
 			}
 			got, err := h.request(tt.args.method, nil)
+
+			bodyData, err := ioutil.ReadAll(got.Body)
+			if err != nil {
+				panic(err)
+			}
+			defer got.Body.Close()
+
 			if (err != nil) != tt.wantErr {
 				t.Errorf("httpRequest.request() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("httpRequest.request() = %v, want %v", got, tt.want)
-			}
+			fmt.Println("***resp.body:", string(bodyData))
 		})
 	}
 }
 
-func TesthttpRequest_SetContentType(t *testing.T) {
+func Test_SetContentType(t *testing.T) {
 	type fields struct {
 		Method      string
 		Url         string
@@ -217,7 +106,18 @@ func TesthttpRequest_SetContentType(t *testing.T) {
 		args   args
 		want   *httpRequest
 	}{
-		// TODO: Add test cases.
+		{
+			name:   "nil content type",
+			fields: fields{},
+			args:   args{contentType: ""},
+			want:   &httpRequest{ContentType: FormContentType},
+		},
+		{
+			name:   "json content type",
+			fields: fields{},
+			args:   args{contentType: JsonContentType},
+			want:   &httpRequest{ContentType: JsonContentType},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -235,7 +135,7 @@ func TesthttpRequest_SetContentType(t *testing.T) {
 	}
 }
 
-func TesthttpRequest_SetHeader(t *testing.T) {
+func Test_SetHeader(t *testing.T) {
 	type fields struct {
 		Method      string
 		Url         string
@@ -253,7 +153,12 @@ func TesthttpRequest_SetHeader(t *testing.T) {
 		args   args
 		want   *httpRequest
 	}{
-		// TODO: Add test cases.
+		{
+			name:   "ok",
+			fields: fields{},
+			args:   args{header: map[string]string{}},
+			want:   &httpRequest{Header: map[string]string{}},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -271,7 +176,7 @@ func TesthttpRequest_SetHeader(t *testing.T) {
 	}
 }
 
-func TesthttpRequest_SetBody(t *testing.T) {
+func TestSetBody(t *testing.T) {
 	type fields struct {
 		Method      string
 		Url         string
@@ -289,7 +194,12 @@ func TesthttpRequest_SetBody(t *testing.T) {
 		args   args
 		want   *httpRequest
 	}{
-		// TODO: Add test cases.
+		{
+			name:   "ok",
+			fields: fields{},
+			args:   args{body: map[string]string{}},
+			want:   &httpRequest{Body: map[string]string{}},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -306,8 +216,49 @@ func TesthttpRequest_SetBody(t *testing.T) {
 		})
 	}
 }
+func Test_httpRequest_SetCookies(t *testing.T) {
+	type fields struct {
+		Url         string
+		ContentType string
+		Header      map[string]string
+		Body        map[string]string
+		Cookies     []*http.Cookie
+		Client      *http.Client
+	}
+	type args struct {
+		cookies []*http.Cookie
+	}
+	tests := []struct {
+		name   string
+		fields fields
+		args   args
+		want   *httpRequest
+	}{
+		{
+			name:   "ok",
+			fields: fields{},
+			args:   args{cookies: []*http.Cookie{}},
+			want:   &httpRequest{Cookies: []*http.Cookie{}},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			h := &httpRequest{
+				Url:         tt.fields.Url,
+				ContentType: tt.fields.ContentType,
+				Header:      tt.fields.Header,
+				Body:        tt.fields.Body,
+				Cookies:     tt.fields.Cookies,
+				Client:      tt.fields.Client,
+			}
+			if got := h.SetCookies(tt.args.cookies); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("httpRequest.SetCookies() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
 
-func TesthttpRequest_SetTimeout(t *testing.T) {
+func TestSetTimeout(t *testing.T) {
 	type fields struct {
 		Method      string
 		Url         string
@@ -325,7 +276,16 @@ func TesthttpRequest_SetTimeout(t *testing.T) {
 		args   args
 		want   *httpRequest
 	}{
-		// TODO: Add test cases.
+		{
+			name:   "ok",
+			fields: fields{Client: &http.Client{}},
+			args:   args{timeout: time.Second},
+			want: &httpRequest{Client: &http.Client{Transport: &http.Transport{
+				DialContext: (&net.Dialer{
+					Timeout: time.Second,
+				}).DialContext}},
+			},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -336,9 +296,68 @@ func TesthttpRequest_SetTimeout(t *testing.T) {
 				Body:        tt.fields.Body,
 				Client:      tt.fields.Client,
 			}
-			if got := h.SetTimeout(tt.args.timeout); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("httpRequest.SetTimeout() = %v, want %v", got, tt.want)
+			got := h.SetTimeout(tt.args.timeout)
+			s, _ := json.Marshal(got)
+			fmt.Println("***got:", string(s))
+		})
+	}
+}
+
+func Test_httpRequest_Get(t *testing.T) {
+	type fields struct {
+		Url         string
+		ContentType string
+		Header      map[string]string
+		Body        map[string]string
+		Cookies     []*http.Cookie
+		Client      *http.Client
+	}
+
+	tests := []struct {
+		name    string
+		fields  fields
+		want    *http.Response
+		wantErr bool
+	}{
+		{
+			name: "success",
+			fields: fields{
+				Url:         "https://www.baidu.com/",
+				ContentType: FormContentType,
+				Header:      map[string]string{},
+				Body:        map[string]string{},
+				Cookies:     []*http.Cookie{},
+				Client: &http.Client{
+
+				},
+			},
+			want:    &http.Response{},
+			wantErr: false,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			h := &httpRequest{
+				Url:         tt.fields.Url,
+				ContentType: tt.fields.ContentType,
+				Header:      tt.fields.Header,
+				Body:        tt.fields.Body,
+				Cookies:     tt.fields.Cookies,
+				Client:      tt.fields.Client,
 			}
+			got, err := h.Get()
+			bodyData, err := ioutil.ReadAll(got.Body)
+			if err != nil {
+				panic(err)
+			}
+			defer got.Body.Close()
+
+			if (err != nil) != tt.wantErr {
+				t.Errorf("httpRequest.Get() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			fmt.Println("***resp.body:", string(bodyData))
+
 		})
 	}
 }
